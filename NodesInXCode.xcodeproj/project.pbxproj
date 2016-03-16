@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1510C9481C99A49B0065E061 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510C9471C99A49B0065E061 /* main.cpp */; };
+		1510C95D1C99A52F0065E061 /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510C94F1C99A52F0065E061 /* NodeController.cpp */; };
+		1510C95E1C99A52F0065E061 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510C9511C99A52F0065E061 /* NodeRunner.cpp */; };
+		1510C95F1C99A52F0065E061 /* ArrayNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510C9531C99A52F0065E061 /* ArrayNode.cpp */; };
+		1510C9601C99A52F0065E061 /* CTECArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510C9551C99A52F0065E061 /* CTECArray.cpp */; };
+		1510C9611C99A52F0065E061 /* CtecList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510C9571C99A52F0065E061 /* CtecList.cpp */; };
+		1510C9621C99A52F0065E061 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510C9591C99A52F0065E061 /* Node.cpp */; };
+		1510C9631C99A52F0065E061 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510C95B1C99A52F0065E061 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +30,19 @@
 
 /* Begin PBXFileReference section */
 		1510C9441C99A49B0065E061 /* NodesInXCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NodesInXCode; sourceTree = BUILT_PRODUCTS_DIR; };
-		1510C9471C99A49B0065E061 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1510C94F1C99A52F0065E061 /* NodeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeController.cpp; sourceTree = "<group>"; };
+		1510C9501C99A52F0065E061 /* NodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeController.h; sourceTree = "<group>"; };
+		1510C9511C99A52F0065E061 /* NodeRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeRunner.cpp; sourceTree = "<group>"; };
+		1510C9531C99A52F0065E061 /* ArrayNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayNode.cpp; sourceTree = "<group>"; };
+		1510C9541C99A52F0065E061 /* ArrayNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayNode.h; sourceTree = "<group>"; };
+		1510C9551C99A52F0065E061 /* CTECArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTECArray.cpp; sourceTree = "<group>"; };
+		1510C9561C99A52F0065E061 /* CTECArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTECArray.h; sourceTree = "<group>"; };
+		1510C9571C99A52F0065E061 /* CtecList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CtecList.cpp; sourceTree = "<group>"; };
+		1510C9581C99A52F0065E061 /* CtecList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CtecList.h; sourceTree = "<group>"; };
+		1510C9591C99A52F0065E061 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		1510C95A1C99A52F0065E061 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		1510C95B1C99A52F0065E061 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		1510C95C1C99A52F0065E061 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +59,9 @@
 		1510C93B1C99A49B0065E061 = {
 			isa = PBXGroup;
 			children = (
-				1510C9461C99A49B0065E061 /* NodesInXCode */,
 				1510C9451C99A49B0065E061 /* Products */,
+				1510C94E1C99A52F0065E061 /* Controller */,
+				1510C9521C99A52F0065E061 /* Model */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +73,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1510C9461C99A49B0065E061 /* NodesInXCode */ = {
+		1510C94E1C99A52F0065E061 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1510C9471C99A49B0065E061 /* main.cpp */,
+				1510C94F1C99A52F0065E061 /* NodeController.cpp */,
+				1510C9501C99A52F0065E061 /* NodeController.h */,
+				1510C9511C99A52F0065E061 /* NodeRunner.cpp */,
 			);
-			path = NodesInXCode;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1510C9521C99A52F0065E061 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1510C9531C99A52F0065E061 /* ArrayNode.cpp */,
+				1510C9541C99A52F0065E061 /* ArrayNode.h */,
+				1510C9551C99A52F0065E061 /* CTECArray.cpp */,
+				1510C9561C99A52F0065E061 /* CTECArray.h */,
+				1510C9571C99A52F0065E061 /* CtecList.cpp */,
+				1510C9581C99A52F0065E061 /* CtecList.h */,
+				1510C9591C99A52F0065E061 /* Node.cpp */,
+				1510C95A1C99A52F0065E061 /* Node.h */,
+				1510C95B1C99A52F0065E061 /* Timer.cpp */,
+				1510C95C1C99A52F0065E061 /* Timer.h */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1510C9481C99A49B0065E061 /* main.cpp in Sources */,
+				1510C9621C99A52F0065E061 /* Node.cpp in Sources */,
+				1510C95D1C99A52F0065E061 /* NodeController.cpp in Sources */,
+				1510C9631C99A52F0065E061 /* Timer.cpp in Sources */,
+				1510C9611C99A52F0065E061 /* CtecList.cpp in Sources */,
+				1510C95E1C99A52F0065E061 /* NodeRunner.cpp in Sources */,
+				1510C95F1C99A52F0065E061 /* ArrayNode.cpp in Sources */,
+				1510C9601C99A52F0065E061 /* CTECArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
