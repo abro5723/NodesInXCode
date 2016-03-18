@@ -33,6 +33,7 @@ public:
 	Type removeFromIndex(int index);
 	Type set(int index, Type value);
 	void calculatedValue(Type value);
+    int indexOf(Type searchValue);
 
 };
 

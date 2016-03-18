@@ -174,11 +174,11 @@ Type CtecList<Type> :: getFront()
 	thingToGet = returnValue = head->getValue();
 }
 
-template <class Type>
-Type CtecList<Type> :: getEnd()
-{
-
-}
+//template <class Type>
+//Type CtecList<Type> :: getEnd()
+//{
+//
+//}
 
 template <class Type>
 Type CtecList<Type> :: getFromIndex(int index)
@@ -190,5 +190,26 @@ template <class Type>
 Type CtecList<Type> :: set(int index, Type value)
 {
 
+}
+
+template <class Type>
+int CtecList<Type> :: indexOf(Type searchValue)
+{
+    assert(this->size >0);
+    int index = -1;
+    ArrayNode<Type>*searchPointer;
+    for(searchPointer = head; searchPointer->getNext() != nullptr; searchPointer = searchPointer->getNext())
+    {
+        
+        if(searchValue == searchPointer->getValue())
+        {
+            return index;
+        }
+        index++;
+    }
+    
+    index = -1;
+    
+    return index;
 }
 
