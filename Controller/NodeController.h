@@ -22,10 +22,15 @@
 class NodeController
 {
 private:
-CTECArray<int> * notHipsterInts;
-Timer arrayTimer;
-CtecList<int> * numbers;
-void testLists();
+    int * mergeData;
+    CTECArray<int> * notHipsterInts;
+    Timer arrayTimer;
+    CtecList<int> * numbers;
+    void testLists();
+    void setupRandomArray();
+    void mergesort(int dataArray [], int size);
+    void merge(int data [], int sizeOne, int sizeTwo);
+    void doMergesort()
 
 public:
 	NodeController();
