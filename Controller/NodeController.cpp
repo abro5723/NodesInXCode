@@ -15,7 +15,7 @@ NodeController::NodeController()
 
 NodeController::~NodeController()
 {
-
+ 
 }
 
 void NodeController:: testLists()
@@ -53,8 +53,22 @@ void NodeController::doMergesort()
         int myRandom = rand();
         mergeData[spot] = myRandom;
     }
+    for(int spot=0; spot < 50; spot++)
+    {
+        cout << mergeData[spot] << ",";
+    }
+    Timer mergeTimer;
+    mergeTimer.startTimer();
     
     mergesort(mergeData, 5000);
+    
+    mergeTimer.stopTimer();
+    mergeTimer.displayTimerInformation();
+    for(int spot=0; spot < 50; spot++)
+    {
+        cout << mergeData[spot] << ",";
+    }
+
 }
 
 void NodeController::mergesort(int data [], int size)
@@ -64,6 +78,20 @@ void NodeController::mergesort(int data [], int size)
 
 void NodeController ::merge(int data[] , int sizeOne, int sizeTwo)
 {
+    int * temp;
+    int copied = 0;
+    int copied2 = 0;
+    int copied1 = 0;
+    int index;
     
+    temp = new int[sizeOne + sizeTwo];
+    
+    while((copied1 < sizeOne) && (copied2 < sizeTwo))
+    {
+        if(data[copied1] < (data + sizeOne)[copied2])
+        {
+            
+        }
+    }
 }
 

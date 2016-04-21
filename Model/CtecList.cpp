@@ -187,7 +187,7 @@ Type CtecList<Type> :: getFromIndex(int index)
 }
 
 template <class Type>
-Type CtecList<Type> :: set(int index, Type value)
+Type CtecList<Type> :: set(int in  dex, Type value)
 {
 
 }
