@@ -95,3 +95,10 @@ void NodeController ::merge(int data[] , int sizeOne, int sizeTwo)
     }
 }
 
+void NodeController :: tryTree()
+{
+    CTECBinaryTree<int> testTree;
+    testTree.insert(7);
+    testTree.insert(10)
+}
+
