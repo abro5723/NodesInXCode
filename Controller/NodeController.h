@@ -30,7 +30,7 @@ private:
     void setupRandomArray();
     void mergesort(int dataArray [], int size);
     void merge(int data [], int sizeOne, int sizeTwo);
-    void doMergesort()
+    void doMergesort();
 
 public:
 	NodeController();
