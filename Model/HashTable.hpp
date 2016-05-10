@@ -21,11 +21,13 @@ private:
     int findPosition(const Type& value);
     int handleCollision(const Type& value);
     void updateSize();
+    int getSize();
 public:
     HashTable();
     ~HashTable();
+    
     void add(const Type& value);
-    bool remove(const Type value);
+    bool remove(const Type& value);
     bool contains(const Type& value);
 };
 
