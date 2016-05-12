@@ -31,8 +31,9 @@ public:
     int size() const;
     bool isEdge(int source, int target) const;
     std::set<int> neighbors(int vertex) const;
-    void depthfirstTraversal(Graph<Type> graph, int vertex);
-    void breadthfirstTraversal(Graph<Type> graph, int vertex);
+    void depthFirstTravsal(Graph currentGraph, int vertex, bool * markedVerticies);
+    void depthFirstTravsal(Graph currentGraph, int vertex);
+    void breadthFirstTravsal(Graph currentGraph, int vertex);
 };
 
 #endif /* Graph_hpp */
