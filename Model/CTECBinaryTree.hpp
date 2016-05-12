@@ -19,22 +19,25 @@ private:
     int height;
     int size;
     bool balanced;
-    bool contains(Type value, CTECBinaryTree<Type> * currentTree);
-    int calculateSize(TreeNode<Type> * currentNode);
-    TreeNode<Type> * getRightMostChild(CTECBinaryTree<Type> * leftSubTree);
-    TreeNode<Type> * getLeftMostChild(CTECBinaryTree<Type> * rightSubTree);
-    void remove(TreeNode<Type> * nodeToDelete);
-    
+    bool contains(Type value, TreeNode<Type> * currentTree); //Done
+    void calculateSize(TreeNode<Type> * currentNode); //Done
+    TreeNode<Type> * getRightMostChild(TreeNode<Type> * leftSubTree);
+    TreeNode<Type> * getLeftMostChild(TreeNode<Type> * rightSubTree);
+    void remove(TreeNode<Type> * noddToBeDeleted);
 public:
     CTECBinaryTree();
     ~CTECBinaryTree();
     bool insert(const Type& value);
     bool contains(Type value);
-    void remove(const Type & value);
+    void remove(const Type& value);
     int getHeight();
+    int getSize();
+    bool isBalanced();
+    TreeNode<Type>* getRoot();
     void inorderTraversal(TreeNode<Type> * currentNode);
-    void preorderTraversal(TreeNode<Type> * currentNode);
     void postorderTraversal(TreeNode<Type> * currentNode);
+    void preorderTraversal(TreeNode<Type> * currentNode);
+    
 };
 
 #endif /* CTECBinaryTree_hpp */
