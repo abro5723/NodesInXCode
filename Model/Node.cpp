@@ -30,7 +30,7 @@ Node<Type>::Node(const Type value)
 template <class Type>
 Type Node<Type>:: getValue()
 {
-	return this ->value;
+	return this->value;
 }
 
 template <class Type>
