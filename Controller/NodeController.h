@@ -36,6 +36,7 @@ public:
 	NodeController();
 	virtual ~NodeController();
 	void start();
+    void tryTree();
 };
 
 #endif /* CONTROLLER_NODECONTROLLER_H_ */

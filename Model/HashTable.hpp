@@ -16,7 +16,7 @@ class HashTable
 {
 private:
     int capacity;
-    int tableCapacity;
+    int chainedCapacity;
     double efficiencyPercentage;
     int size;
     Type * internalStorage;
@@ -37,7 +37,7 @@ public:
     ~HashTable();
     int getSize();
     void add(HashNode<Type> currentNode);
-    void addToTable(HashNode<Type> currentNode);
+    void addChained(HashNode<Type> currentNode);
     
     bool remove(HashNode<Type> currentNode);
     bool contains(HashNode<Type> currentNode);

@@ -35,7 +35,7 @@ int HashTable<Type> :: getSize()
 }
 
 template <class Type>
-void HashTable<Type> :: addToTable(HashNode<Type> currentNode)
+void HashTable<Type> :: addChained(HashNode<Type> currentNode)
 {
     if(this->size/this->tableCapacity >= this->efficiencyPercentage)
     {
@@ -99,7 +99,7 @@ int HashTable<Type> :: findTablePosition(HashNode<Type> currentNode)
 {
     int position = 0;
     
-    position = currentNode.getKey() % tableCapacity;
+    position = currentNode.getKey() % chainedCapacity;
 }
 
 template <class Type>
@@ -170,8 +170,8 @@ void HashTable<Type> :: updateTableCapacity()
 {
     int updatedCapacity = getNextPrime();
     CtecList<HashNode<Type>> * updateTable = new CtecList<HashNode<Type>>[updatedCapacity];
-    int oldTableCapacity = tableCapacity;
-    tableCapacity = updatedCapacity;
+    int oldTableCapacity = chainedCapacity;
+    chainedCapacity = updatedCapacity;
     
     for(int index = 0; index < oldTableCapacity; index++)
     {
