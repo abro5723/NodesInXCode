@@ -298,10 +298,6 @@ TreeNode<Type> * CTECBinaryTree<Type> :: getRoot()
 template<class Type>
 CTECBinaryTree<Type> :: ~CTECBinaryTree<Type>()
 {
-    while(root != nullptr)
-    {
-        remove(root);
-    }
 }
 
 

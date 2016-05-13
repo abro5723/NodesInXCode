@@ -17,7 +17,7 @@ HashTable<Type> :: HashTable()
     this->capacity = 101;
     this->efficincyPercentage = .677;
     this->size = 0;
-    this->internalStorage = new Type[capacity];
+    this->internalStorage = new HashNode<Type>*[capacity];
     this->tableStorage = new CtecList<HashNode<Type>>[capacity];
 }
 
@@ -61,7 +61,7 @@ void HashTable<Type> :: add(HashNode<Type> currentNode)
 {
     if (!contains(currentNode))
     {
-        if(this->size/this->ccity >= this->efficiencyPercentage)
+        if(size/capacity >= this->efficiencyPercentage)
         {
             updateCapacity();
         }
@@ -76,7 +76,8 @@ void HashTable<Type> :: add(HashNode<Type> currentNode)
             }
         }
         
-        internalStorage[positionToInsert] = currentNode;
+        internalStorage[positionToInsert] = &currentNode;
+        size++;
     }
 }
 
@@ -152,6 +153,8 @@ void HashTable<Type> :: updateCapacity()
     
     int oldCapacity = capacity;
     capacity = updatedCapacity;
+    
+    HashNode<Type> ** largerStorage = new HashNode<Type> * [capacity];
     
     for(int index = 0; index < oldCapacity; index++)
     {

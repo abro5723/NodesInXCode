@@ -19,8 +19,8 @@ private:
     int chainedCapacity;
     double efficiencyPercentage;
     int size;
-    Type * internalStorage;
     CtecList<HashNode<Type>> * tableStorage;
+    HashNode<Type> ** internalStorage;
     
     int findPosition(HashNode<Type> currentNode);
     int findTablePosition(HashNode<Type> currentNode);
