@@ -25,16 +25,15 @@ bool CTECBinaryTree<Type> :: insert(const Type& value)
     TreeNode<Type> * current;
     TreeNode<Type> * trailingCurrent = nullptr;
     assert(insertedNode != nullptr);
-    
-    if(contains(value))
+    if(root == nullptr)
     {
-        return false;
+        root = insertedNode;
     }
     else
     {
-        if(root == nullptr)
+        if(contains(value))
         {
-            root = insertedNode;
+            return false;
         }
         else
         {
@@ -65,8 +64,8 @@ bool CTECBinaryTree<Type> :: insert(const Type& value)
             
             insertedNode->setParent(trailingCurrent);
         }
-        return true;
     }
+    return true;
 }
 
 

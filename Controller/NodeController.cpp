@@ -30,7 +30,7 @@ void NodeController :: testsLists()
 
 void NodeController :: start()
 {
-    tryTree();
+   tryTree();
 }
 
 void NodeController::checkSorts()
