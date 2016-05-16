@@ -15,6 +15,19 @@ using namespace std;
 template<class Type>
 const int Graph<Type> :: MAXIMUM;
 
+
+template <class Type>
+Graph<Type>:: Graph()
+{
+    
+}
+
+template <class Type>
+Graph<Type> :: ~Graph()
+{
+    
+}
+
 template <class Type>
 void Graph<Type> :: addVertex(const Type& value)
 {
