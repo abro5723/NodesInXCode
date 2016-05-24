@@ -9,7 +9,7 @@
 #ifndef HashTable_hpp
 #define HashTable_hpp
 
-#include "CTECList.cpp"
+#include "CTECList.h"
 #include "HashNode.cpp"
 template <class Type>
 class HashTable
