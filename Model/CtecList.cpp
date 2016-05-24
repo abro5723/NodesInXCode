@@ -1,10 +1,3 @@
-/*
- * CtecList.cpp
- *
- *  Created on: Feb 22, 2016
- *      Author: abro5723
- */
-
 #include "CtecList.h"
 #include "assert.h"
 
@@ -357,4 +350,3 @@ void CtecList<Type>::selectionSort()
         }
     }
 }
-

@@ -17,6 +17,7 @@
 #include "../Model/CtecList.cpp"
 #include "../Model/CTECBinaryTree.cpp"
 #include "../Model/Graph.cpp"
+#include "../Model/HashTable.cpp"
 #include<string>
 #include <iostream>
 
@@ -39,6 +40,7 @@ private:
     void tryTree();
     void doQuick();
     void tryGraphs();
+    void testHashTable();
 
 public:
     NodeController();
